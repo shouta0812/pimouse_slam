@@ -2,7 +2,7 @@
 <launch>
   <include file="$(find pimouse_ros)/launch/pimouse.launch" /> 
   <node pkg="pimouse_run_corridor" name="wall_around" type="wall_around.py" required="true" />
-
+ 
   <node pkg="urg_node" name="urg_node" type="urg_node" required="true" >
         <param name="frame_id" value="base_link"/>
   </node>
